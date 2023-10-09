@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loc-cont {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  vertical-align: baseline;
+}
+
+.location {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: white;
+  overflow: wrap;
+  vertical-align: baseline;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1rem;
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+  }
+}
+
+.city {
+  text-align: start;
+  height: 3rem;
+  /* display: flex;
+  flex-direction: column; */
+  font-size: 1.6rem;
+  color: beige;
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+  }
+}

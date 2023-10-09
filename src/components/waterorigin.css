@@ -1,0 +1,23 @@
+.card-info {
+  border-radius: 1rem;
+  background-color: rgba(250, 250, 250, 0.3);
+  margin: 1rem;
+  padding: 0.5rem;
+  text-align: justify;
+  margin-top: 2em;
+}
+
+.question {
+  text-align: center;
+  margin: auto;
+  color: rgb(226, 194, 14);
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;;
+}
+.avatar {
+  position: relative;
+  top: -40px;
+  left: -5%;
+  margin-bottom: -50px;
+}

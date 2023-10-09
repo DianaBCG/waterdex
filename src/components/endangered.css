@@ -1,0 +1,25 @@
+.species-cont {
+  display:flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(226, 194, 14);
+  font-size: 1.5rem;
+  max-width: 75%;
+  text-align: left;
+}
+
+.card-cont {
+  width: 90%;
+}
+
+.lens {
+  width: 100px;
+  position: absolute;
+  right: 5%;
+  margin-top: -30px;
+}

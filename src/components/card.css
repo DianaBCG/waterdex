@@ -1,0 +1,19 @@
+.card {
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  
+  @media (max-width: 500px){
+    min-width: 90px;
+    max-width: 120px;
+    margin-left: 5px;
+    color: beige;
+    font-size: .8rem;
+ }
+}
+
+.specie-img {
+  border-radius: 1rem;
+  margin-bottom: .5rem;
+}
