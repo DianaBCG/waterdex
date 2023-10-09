@@ -1,0 +1,2 @@
+/info/* http://waterdex.eu-central-1.elasticbeanstalk.com/info/:splat 200!
+/species/* http://waterdex.eu-central-1.elasticbeanstalk.com/species/:splat 200!
