@@ -525,6 +525,7 @@ const mockedData = {
       }
   ]
 };
+
 function EndangeredSpecies(props) {
   const {
     speciesList,

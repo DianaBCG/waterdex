@@ -34,7 +34,7 @@ function Modal(props) {
           <p className="name-right">{specie?.scientificName}</p>
           <p className="name-left">Endangered score:</p>
           <p className="name-right">{specie?.score}</p>
-          <p className="specie-info">{cares ? cares : 'Loading'}</p>
+          <p className="specie-info">{cares ? cares : 'Loading...'}</p>
         </div>
       </div>
     </div>

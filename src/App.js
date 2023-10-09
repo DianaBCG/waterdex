@@ -65,8 +65,8 @@ function App() {
         `http://waterdex.eu-central-1.elasticbeanstalk.com/info?lat=${lat}&long=${long}`
       );
       console.log(res, 'RESPONSE')
-      setQuality(res.data.WaterQuality.color)
-      setQuality(res.data.WaterQuality.xml)
+      setQuality(res.data.waterQuality.color)
+      setQualityInfo(res.data.waterQuality.xml)
       return res.data.info;
   } catch (err) {
       console.error(err);
@@ -138,16 +138,16 @@ function App() {
         expand={displayInput}
         setExpand={() => setDisplayInput(!displayInput)}
       />
-      {qualityInfo && (<WaterQuality
+      {qualityInfo && quality && quality !== 'NA' && (<WaterQuality
         info={qualityInfo}
         color={quality}
       />)}
-      {species && (<EndangeredSpecies
+      {species && species.length && (<EndangeredSpecies
         speciesList={species}
         openModal={() =>setOpenModal(true)}
         setSpecie={(e) => setCurrentSpecie(e)}
       />)}
-      {endangeredSpecies && (<EndangeredSpecies
+      {endangeredSpecies && endangeredSpecies.length > 0 && (<EndangeredSpecies
         openModal={() =>setOpenModal(true)}
         speciesList={endangeredSpecies}
         setSpecie={(e) => setCurrentSpecie(e)}

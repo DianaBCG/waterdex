@@ -23,7 +23,7 @@ const Map = (props) => {
           }}
           onClick={() => {
             setLat(tempLat);
-            setLat(tempLon);
+            setLong(tempLon);
           }}
         >
             Update
